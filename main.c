@@ -2,8 +2,14 @@
 
 int main(void)
 {
+    // BOŞ STRİNG
     ft_printf("merhaba\n");
+
+    // %c 
     char c = 'c';
-    ft_printf("%c\n", c);
-    return (0);
+    char string[] = "merhaba\n";
+    ft_printf("%c\n%s",c, string);
+
+    ft_printf("%d\n", 123);
+    
 }

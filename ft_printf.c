@@ -7,9 +7,11 @@ int	ft_brace(va_list args, const char brace)
 
 	len = 0;
 	if (brace == 'c')
-		len += ft_putchar(va_arg(args, int));
+		len += ft_put_char(va_arg(args, int));
     else if (brace == 's')
-        len += ft_printstring(va_arg(args, char *));
+        len += ft_print_string(va_arg(args, char *));
+    else if (brace == 'd' || brace == 'i')
+        len += ft_print_number(va_arg(args, int));
 
     return (len);
 }
@@ -31,7 +33,7 @@ int ft_printf(const char *str,  ...)
             i++;
         }
         else
-            len += ft_putchar(str[i]);
+            len += ft_put_char(str[i]);
         i++;
     }
     va_end(args);
