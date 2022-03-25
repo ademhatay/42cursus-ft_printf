@@ -8,8 +8,9 @@ int main(void)
     // %c 
     char c = 'c';
     char string[] = "merhaba\n";
-    ft_printf("%c\n%s",c, string);
+    ft_printf("%c\n%c\n%c\n%c\n%c\n%s",c,c,c,c,c, string);
 
     ft_printf("%d\n", 123);
+    ft_printf("%%\n");
     
 }

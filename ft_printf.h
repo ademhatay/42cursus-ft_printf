@@ -10,7 +10,6 @@ int ft_printf(const char *str, ...);
 int ft_put_char(char c);
 int ft_print_string(char *string);
 void    ft_put_string(char *string);
-int ft_print_number(int number);
 char    *ft_itoa(int number);
 
 #endif

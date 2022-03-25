@@ -1,5 +1,10 @@
 #include "ft_printf.h"
 
+int ft_put_char(char c)
+{
+    return (write(1, &c, 1));
+}
+
 void    ft_put_string(char *string)
 {
     int i;
@@ -28,18 +33,4 @@ int ft_print_string(char *string)
        i++;
     }
     return (i);
-}
-
-int ft_print_number(int number)
-{
-	int		i;
-	char	*s;
-
-	i = 0;
-	if (number == 0)
-		return (write(1, "0", 1));
-	s = ft_itoa(number);
-	i = ft_print_string(s);
-	free(s);
-	return (i);
 }
