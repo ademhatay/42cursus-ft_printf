@@ -7,9 +7,14 @@
 # include <stdlib.h>
 
 int ft_printf(const char *str, ...);
-int ft_put_char(char c);
-int ft_print_string(char *string);
-void    ft_put_string(char *string);
+int ft_putchar(char c);
+void ft_putstr(char *str);
+int	ft_printstr(char *str);
+int ft_printint(int number);
+int ft_numnum(int numnum);
 char    *ft_itoa(int number);
+int ft_print_point(unsigned long long number);
+void ft_puthex(unsigned long long num);
+int hexlen(unsigned long long n);
 
 #endif

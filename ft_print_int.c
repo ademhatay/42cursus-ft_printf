@@ -1,5 +1,17 @@
-#include "printf.h"
-# include <stdlib.h>
+#include "ft_printf.h"
+
+int ft_printint(int number)
+{
+   int  len;
+   char *num; 
+
+   len = 0;
+   num = ft_itoa(number);
+   len = ft_printstr(num);
+   free(num);
+   return (len);
+}
+
 int ft_numnum(int numnum)
 {
     int i;
