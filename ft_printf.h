@@ -16,5 +16,8 @@ char    *ft_itoa(int number);
 int ft_print_point(unsigned long long number);
 void ft_puthex(unsigned long long num);
 int hexlen(unsigned long long n);
-
+int	ft_print_unsigned(unsigned int number);
+char	*ft_uitoa(unsigned int number);
+int	ft_number_len(unsigned int number);
+int ft_print_hex(unsigned int number, const char brace);
 #endif
