@@ -17,4 +17,11 @@ int ft_print_point(unsigned long long number);
 int	ft_print_unsigned(unsigned int number);
 char	*ft_uitoa(unsigned int number);
 int	ft_number_len(unsigned int number);
+int	ft_print_hex(unsigned int num, const char format);
+void	ft_put_hex(unsigned int num, const char format);
+int	ft_hex_len(unsigned	int num);
+void	ft_putchar_fd(char c, int fd);
+int	ft_ptr_len(uintptr_t num);
+void	ft_put_ptr(uintptr_t num);
+int	ft_print_ptr(unsigned long long ptr);
 #endif
