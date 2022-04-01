@@ -12,12 +12,8 @@ int	ft_brace(va_list args, const char brace)
         len1 += ft_printstr(va_arg(args, char *));
     else if (brace == 'd' || brace == 'i')
         len1 += ft_printint(va_arg(args, int));
-    else if (brace == 'p')
-        len1 += ft_print_point(va_arg(args, unsigned long long));
     else if (brace == 'u')
         len1 += ft_print_unsigned(va_arg(args, unsigned int));
-    // else if (brace == 'x' || brace == 'X')
-    //     len1 += ft_print_hex(va_arg(args, int), brace);
     else if (brace == '%')
         len1 += ft_putchar('%');
     return (len1);
